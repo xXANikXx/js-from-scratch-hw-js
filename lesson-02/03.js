@@ -4,6 +4,12 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
-let grade
 // your code
+
+let score = 70;
+let grade = score >= 90 ? 'A' :
+    score >= 80 ? 'B' :
+        score >= 70 ? 'C' :
+            score >= 50 ? 'D' :
+                'F';
+console.log(grade);
