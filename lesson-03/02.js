@@ -1,5 +1,8 @@
 // Разработайте функцию isEven, которая определяет, чётное ли число.
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
-const isEven = a => a % 2 === 0;
+function isEven(a) {
+    if (a % 2 === 0)
+        return true;
+}
 console.log(isEven());
