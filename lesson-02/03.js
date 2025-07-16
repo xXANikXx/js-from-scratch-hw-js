@@ -5,9 +5,9 @@
  */
 
 // your code
-let grade = score >= 90 ? 'A' :
-    score >= 80 ? 'B' :
-        score >= 70 ? 'C' :
-            score >= 50 ? 'D' :
-                'F';
-console.log(grade);
+// let grade = score >= 90 ? 'A' :
+//     score >= 80 ? 'B' :
+//         score >= 70 ? 'C' :
+//             score >= 50 ? 'D' :
+//                 'F';
+// console.log(grade);
