@@ -27,11 +27,10 @@ function includesElement(array, element) {
 
 function findCommonElements(array1, array2) {
     const results = [];
-    const combined = array1.concat(array2);
 
-    for (let i = 0; i < combined.length; i++) {
-        if (!includesElement(results, combined[i])) {
-            results.push(combined[i]);
+    for (let i = 0; i < array1.length; i++) {
+        if (includesElement(array2, array1[i]) && !includesElement(results, array1[i])) {
+            results.push(array1[i]);
         }
     }
 
