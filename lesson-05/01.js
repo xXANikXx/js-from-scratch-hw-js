@@ -15,5 +15,22 @@ const game = {
     gold: 250,
     lumber: 100,
   },
-  addResource() {}
+  addResource(resource, amount) {
+    if (!(resource in this.resources)) {
+      console.log("Invalid resource");
+      return;
+    }
+
+    if (typeof amount !== 'number' || amount <= 0) {
+      console.log("Invalid value for amount");
+      return;
+    }
+
+    this.resources[resource] += amount;
+
+    console.log(`A "${resource}" was added, in the ${amount}.`);
+    console.log("Total:");
+    console.table(this.resources);
+
+  }
 }

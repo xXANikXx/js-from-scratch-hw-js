@@ -35,4 +35,12 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(obj, nameOfWork, newValue) {
+  if (nameOfWork in obj) {
+    console.log(`Update: '${nameOfWork}''${newValue}'`);
+  } else {
+    console.log(`Added: '${nameOfWork}''${newValue}'`);
+  }
+
+  obj[nameOfWork] = newValue;
+}
