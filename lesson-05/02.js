@@ -29,18 +29,18 @@ console.log(gallery)
 }
 */
 
-const gallery = {
-  'Mona Lisa': 'Leonardo da Vinci',
-  'Starry Night': 'Vincent van Gogh',
-  'The Scream': 'Edvard Munch',
-}
+// const gallery = {
+//   'Mona Lisa': 'Leonardo da Vinci',
+//   'Starry Night': 'Vincent van Gogh',
+//   'The Scream': 'Edvard Munch',
+// }
 
-function updateGallery(obj, nameOfWork, newValue) {
-  if (nameOfWork in obj) {
-    console.log(`Update: '${nameOfWork}''${newValue}'`);
-  } else {
-    console.log(`Added: '${nameOfWork}''${newValue}'`);
-  }
+// function updateGallery(obj, nameOfWork, newValue) {
+//   if (nameOfWork in obj) {
+//     console.log(`Update: '${nameOfWork}''${newValue}'`);
+//   } else {
+//     console.log(`Added: '${nameOfWork}''${newValue}'`);
+//   }
 
-  obj[nameOfWork] = newValue;
-}
+//   obj[nameOfWork] = newValue;
+// }
